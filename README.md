@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Adrian Camilo Rodriguez Quintero</h1>
-<h3 align="center">Frontend developer & Ux,UI Designer</h3>
+<h3 align="center">Frontend developer web and Ux & UI Designer</h3>
 
 - 🔭 I’m currently working on **Pura Piel**
 

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Horizonte Multimídia: frontend, UX/UI e projetos realizados no Brasil." />
+  <meta name="description" content="Portfólio de Horizonte Multimídia: serviços de frontend, UX/UI e produtos digitais realizados no Brasil." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <title>Portfólio | Horizonte Multimídia</title>
 </head>
@@ -15,10 +15,7 @@
   <header class="header">
     <div class="brand" aria-label="Marca Horizonte Multimídia">
       <span class="brand__logo" aria-hidden="true">HM</span>
-      <div>
-        <p class="brand__title">Horizonte Multimídia</p>
-        <p class="brand__subtitle">Frontend | UX/UI</p>
-      </div>
+      <span class="sr-only">Horizonte Multimídia</span>
     </div>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
       <span></span>
@@ -39,35 +36,18 @@
     <section id="hero" class="section hero" aria-label="Apresentação principal">
       <div class="hero__text">
         <p class="pill">Disponível para novos projetos</p>
-        <h1>Crio experiências digitais claras, acessíveis e com impacto.</h1>
-        <p class="lead">Uno desenvolvimento frontend e design UX/UI para entregar interfaces rápidas, responsivas e com estética glass + iridescência.</p>
+        <h1>Vendo serviços com experiências digitais claras e memoráveis.</h1>
+        <p class="lead">Uno frontend e UX/UI para criar landing pages, fluxos e dashboards que convertem, com estética glass + iridescência e foco em performance.</p>
         <div class="hero__actions">
           <a class="btn primary" href="#contact">Agendar reunião</a>
           <a class="btn ghost" href="#projects">Ver projetos</a>
         </div>
-        <div class="meta">
-          <span>+5 anos criando produtos web</span>
-          <span>Mobile first e acessíveis</span>
-          <span>Baseado em heurísticas de UX</span>
-        </div>
+      <div class="meta">
+        <span>+5 anos criando produtos web</span>
+        <span>Mobile first e acessíveis</span>
+        <span>Baseado em heurísticas de UX</span>
       </div>
-      <div class="hero__card" role="presentation">
-        <div class="glass-card">
-          <p class="eyebrow">Perfil</p>
-          <h2>Frontend Developer & UX/UI</h2>
-          <p>Performance, acessibilidade e experiências memoráveis para marcas no Brasil e no exterior.</p>
-          <ul class="tags" aria-label="Tecnologias principais">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Figma</li>
-          </ul>
-          <div class="status">
-            <span class="status__dot" aria-hidden="true"></span>
-            Disponível para projetos estratégicos
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
 
     <section id="projects" class="section projects" aria-label="Projetos em destaque">
@@ -129,6 +109,21 @@
         <p>Crio produtos que combinam estratégia, narrativa visual e componentes acessíveis. Lidero projetos end-to-end: pesquisa, wireframes, design system e desenvolvimento frontend.</p>
       </div>
       <div class="about__grid">
+        <article class="glass-card profile" aria-label="Perfil">
+          <p class="eyebrow">Perfil</p>
+          <h3>Frontend Developer & UX/UI</h3>
+          <p>Performance, acessibilidade e experiências memoráveis para marcas no Brasil e no exterior.</p>
+          <ul class="tags" aria-label="Tecnologias principais">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Figma</li>
+          </ul>
+          <div class="status">
+            <span class="status__dot" aria-hidden="true"></span>
+            Disponível para projetos estratégicos
+          </div>
+        </article>
         <article class="glass-card" aria-label="Resultados medíveis">
           <h3>Resultados medíveis</h3>
           <p>Otimizo tempo de carregamento, fluxo de usuários e conversões com decisões baseadas em dados.</p>
@@ -178,7 +173,7 @@
   <footer class="footer" aria-label="Rodapé">
     <div class="footer__brand">
       <span class="brand__logo" aria-hidden="true">HM</span>
-      <p>Criando produtos digitais memoráveis. Inspirado em transparência e luz.</p>
+      <p>Bem-vinda à mudança construtiva.</p>
     </div>
     <div class="footer__links">
       <a href="mailto:adrirodriguez@uade.edu.ar">E-mail</a>
@@ -186,6 +181,10 @@
       <a href="https://instagram.com/horizon.lands" target="_blank" rel="noreferrer">Instagram</a>
     </div>
   </footer>
+
+  <button class="scroll-top" type="button" aria-label="Voltar ao topo">
+    ↑
+  </button>
 
   <script src="assets/js/main.js"></script>
 </body>

@@ -1,6 +1,6 @@
 # Portfólio Horizonte Multimídia
 
-Landing page estática, mobile-first, com copy em português do Brasil e estética glass + iridescência. Inclui âncoras principais para Início, Projetos, Sobre mim e Contato.
+ Landing page estática, mobile-first, com copy em português do Brasil e estética glass + iridescência, orientada à venda de serviços digitais. Inclui âncoras principais para Início, Projetos, Sobre mim e Contato.
 
 ## Estrutura
 - `index.html`: Maquetado principal com seções de hero, projetos, sobre mim e formulário de contato.

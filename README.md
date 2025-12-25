@@ -1,4 +1,4 @@
-# Portfólio de Adrian Camilo Rodriguez Quintero
+# Portfólio Horizonte Multimídia
 
 Landing page estática, mobile-first, com copy em português do Brasil e estética glass + iridescência. Inclui âncoras principais para Início, Projetos, Sobre mim e Contato.
 
@@ -27,4 +27,4 @@ Actúa como un Desarrollador Senior de WordPress especializado en rendimiento, s
 ```
 
 ## Créditos
-Desenvolvido por Adrian Camilo Rodriguez Quintero. Contato: **adrirodriguez@uade.edu.ar** ou [LinkedIn](https://www.linkedin.com/in/aroqui/).
+Desenvolvido por Adrian Camilo Rodriguez Quintero para Horizonte Multimídia. Contato: **adrirodriguez@uade.edu.ar** ou [LinkedIn](https://www.linkedin.com/in/aroqui/).

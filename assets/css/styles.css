@@ -179,29 +179,31 @@ h5 {
 }
 
 .brand__logo {
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   display: grid;
   place-items: center;
-  border-radius: 12px;
-  background: var(--color-paper);
-  background-image: var(--accent-iridescent);
-  color: var(--color-paper);
-  font-weight: 700;
-  border: 1.5px solid transparent;
-  box-shadow: 0 10px 30px rgba(8, 9, 42, 0.1);
+  border-radius: 14px;
+  background: linear-gradient(var(--color-paper), var(--color-paper)) padding-box, var(--accent-iridescent) border-box;
+  border: var(--border);
+  box-shadow: 0 10px 30px rgba(8, 9, 42, 0.12);
+  overflow: hidden;
 }
 
-.brand__title {
-  margin: 0;
-  font-weight: 700;
-  font-family: "Fredoka", "Open Sans", system-ui, sans-serif;
+.brand__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.brand__subtitle {
-  margin: 0;
-  color: var(--color-muted);
-  font-size: 0.95rem;
+.brand__wordmark {
+  height: 38px;
+  display: none;
+}
+
+.brand__wordmark img {
+  height: 100%;
+  width: auto;
 }
 
 .nav {
@@ -295,8 +297,11 @@ h5 {
 
 .hero__text {
   display: grid;
-  justify-items: center;
   gap: 0.5rem;
+  max-width: 780px;
+  text-align: left;
+  justify-items: start;
+  margin: 0 auto;
 }
 
 .section {
@@ -313,7 +318,7 @@ h5 {
   overflow: hidden;
   min-height: 70vh;
   justify-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .hero__bg {
@@ -586,6 +591,7 @@ h5 {
   place-items: center;
   cursor: pointer;
   backdrop-filter: blur(14px);
+  z-index: 2;
 }
 
 .slider-btn--prev {
@@ -731,7 +737,7 @@ h5 {
   margin: 0 auto;
   text-align: left;
   position: relative;
-  justify-items: center;
+  justify-items: stretch;
 }
 
 .form__group {
@@ -761,6 +767,20 @@ textarea::placeholder {
 .contact__form button {
   align-self: center;
   width: auto;
+}
+
+.clients__panel {
+  margin-top: 1.5rem;
+  padding: 1.75rem;
+  display: grid;
+  place-items: center;
+}
+
+.clients__panel img {
+  width: 100%;
+  max-width: 1080px;
+  filter: grayscale(1);
+  opacity: 0.9;
 }
 
 .form__honeypot {
@@ -891,14 +911,16 @@ textarea::placeholder {
   .hero {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2.5rem;
+    text-align: left;
+    justify-items: start;
+  }
+
+  .brand__wordmark {
+    display: block;
   }
 
   .section {
     padding: 4rem 1.5rem;
-  }
-
-  .about__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .footer {

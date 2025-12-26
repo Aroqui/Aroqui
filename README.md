@@ -3,9 +3,9 @@
  Landing page estática, mobile-first, com copy em português do Brasil e estética glass + iridescência, orientada à venda de serviços digitais. Inclui âncoras principais para Início, Projetos, Sobre mim e Contato.
 
 ## Estrutura
-- `index.html`: Maquetado principal com seções de hero, projetos, sobre mim e formulário de contato.
-- `assets/css/styles.css`: Estilos responsivos focados em acessibilidade, glassmorphism e iridescência.
-- `assets/js/main.js`: Interações leves (menu móvel e confirmação do formulário).
+- `index.html`: Maquetado principal com hero em full width/parallax, cards de projetos em slider, grade de logos e formulário anti-spam.
+- `assets/css/styles.css`: Estilos responsivos focados em acessibilidade, glassmorphism e iridescência (menus, cards, logos).
+- `assets/js/main.js`: Interações leves (menu móvel com fechamento automático, slider horizontal, parallax e confirmação do formulário).
 
 ## Como usar
 1. Abra `index.html` no navegador ou sirva a pasta com qualquer servidor estático (`python -m http.server` ou similar).

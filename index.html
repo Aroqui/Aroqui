@@ -34,17 +34,12 @@
 
   <main id="conteudo-principal">
     <section id="hero" class="section hero" aria-label="Apresentação principal">
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__text">
-        <h1>Vendo serviços com experiências digitais claras e memoráveis.</h1>
-        <p class="lead">Uno frontend e UX/UI para criar landing pages, fluxos e dashboards que convertem, com estética glass + iridescência e foco em performance.</p>
+        <h1>Serviços digitais que convertem. Experiências claras e memoráveis.</h1>
         <div class="hero__actions">
           <a class="btn primary" href="#contact">Agendar reunião</a>
           <a class="btn ghost" href="#projects">Ver projetos</a>
-        </div>
-        <div class="meta">
-          <span>+5 anos criando produtos web</span>
-          <span>Mobile first e acessíveis</span>
-          <span>Baseado em heurísticas de UX</span>
         </div>
       </div>
     </section>
@@ -58,72 +53,100 @@
       <div class="projects__slider">
         <button class="slider-btn slider-btn--prev" type="button" aria-label="Projetos anteriores">←</button>
         <div class="projects__track" role="list">
-          <article class="project glass-card" role="listitem">
-            <div class="project__meta">
-              <span class="pill pill--light">Produto SaaS</span>
-              <span class="project__year">2024</span>
-            </div>
-            <h3>Dashboard analítico</h3>
-            <p>Painel modular com visualizações acessíveis, modo claro/escuro e performance otimizada.</p>
-            <ul class="tags">
-              <li>React</li>
-              <li>Design System</li>
-              <li>Acessibilidade</li>
-            </ul>
-            <div class="project__actions">
-              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
-              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
-            </div>
-          </article>
-          <article class="project glass-card" role="listitem">
-            <div class="project__meta">
-              <span class="pill pill--light">E-commerce</span>
-              <span class="project__year">2023</span>
-            </div>
-            <h3>Experiência premium</h3>
-            <p>Checkout simplificado, fichas de produto acessíveis e microinterações sutis para aumentar conversões.</p>
-            <ul class="tags">
-              <li>UX Writing</li>
-              <li>Otimização</li>
-              <li>Animações suaves</li>
-            </ul>
-            <div class="project__actions">
-              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
-              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+          <article class="project-card glass-card" role="listitem">
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1600267165505-5c6b4e77af20?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">E-commerce</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3>Marca Aurora</h3>
+              <p>Catálogo imersivo com storytelling visual e checkout reduzido a três passos.</p>
+              <ul class="tags tags--dense">
+                <li>WooCommerce</li>
+                <li>UX Writing</li>
+                <li>Motion leve</li>
+              </ul>
             </div>
           </article>
-          <article class="project glass-card" role="listitem">
-            <div class="project__meta">
-              <span class="pill pill--light">Branding digital</span>
-              <span class="project__year">2022</span>
-            </div>
-            <h3>Site imersivo</h3>
-            <p>Narrativa visual glassmorphism, efeitos de iridescência e performance otimizada para mobile first.</p>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Motion</li>
-            </ul>
-            <div class="project__actions">
-              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
-              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+          <article class="project-card glass-card" role="listitem">
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">SaaS</span>
+                <span class="project-card__year">2023</span>
+              </div>
+              <h3>Painel Horizonte</h3>
+              <p>Dashboard vertical 2:3 com KPIs claros, dark/light e onboarding guiado.</p>
+              <ul class="tags tags--dense">
+                <li>Design System</li>
+                <li>React</li>
+                <li>Acessibilidade</li>
+              </ul>
             </div>
           </article>
-          <article class="project glass-card" role="listitem">
-            <div class="project__meta">
-              <span class="pill pill--light">Landing</span>
-              <span class="project__year">2024</span>
+          <article class="project-card glass-card" role="listitem">
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1522198624420-99cdd48e0a72?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Fintech</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3>Checkout global</h3>
+              <p>Fluxo 16:9 com autenticação em dois fatores e animações suaves de estados.</p>
+              <ul class="tags tags--dense">
+                <li>Pagamentos</li>
+                <li>Segurança</li>
+                <li>Performance</li>
+              </ul>
             </div>
-            <h3>Lançamento rápido</h3>
-            <p>Landing pages de alta conversão com copy clara e SEO técnico otimizado.</p>
-            <ul class="tags">
-              <li>SEO</li>
-              <li>Copy</li>
-              <li>Performance</li>
-            </ul>
-            <div class="project__actions">
-              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
-              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+          </article>
+          <article class="project-card glass-card" role="listitem">
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Educação</span>
+                <span class="project-card__year">2022</span>
+              </div>
+              <h3>Plataforma criativa</h3>
+              <p>Cards verticais 2:3 com aulas on-demand, certificados e comunidade ativa.</p>
+              <ul class="tags tags--dense">
+                <li>WordPress</li>
+                <li>LMS</li>
+                <li>Gamificação</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card glass-card" role="listitem">
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Branding</span>
+                <span class="project-card__year">2023</span>
+              </div>
+              <h3>Experiência imersiva</h3>
+              <p>Galeria 16:9 com efeitos de iridescência, copy concisa e CTA sempre visível.</p>
+              <ul class="tags tags--dense">
+                <li>Storytelling</li>
+                <li>SEO técnico</li>
+                <li>UI Systems</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project-card glass-card" role="listitem">
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Eventos</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3>Lançamento híbrido</h3>
+              <p>Cards 2:3 para lineup, streaming e inscrição com validação anti-spam.</p>
+              <ul class="tags tags--dense">
+                <li>Landing</li>
+                <li>Conversão</li>
+                <li>Analytics</li>
+              </ul>
             </div>
           </article>
         </div>
@@ -138,13 +161,21 @@
         <p>Crio produtos que combinam estratégia, narrativa visual e componentes acessíveis. Lidero projetos end-to-end: pesquisa, wireframes, design system e desenvolvimento frontend.</p>
       </div>
       <div class="about__grid logos-grid" aria-label="Marcas atendidas">
-        <div class="logo-card">Marca 01</div>
-        <div class="logo-card">Marca 02</div>
-        <div class="logo-card">Marca 03</div>
-        <div class="logo-card">Marca 04</div>
-        <div class="logo-card">Marca 05</div>
-        <div class="logo-card">Marca 06</div>
-        <div class="logo-card">Marca 07</div>
+        <div class="logo-card" aria-label="advcash">advcash</div>
+        <div class="logo-card" aria-label="transferência pesos ARG">pesos ARG</div>
+        <div class="logo-card" aria-label="transferência dólares">dólares</div>
+        <div class="logo-card" aria-label="transferência pesos COL">pesos COL</div>
+        <div class="logo-card" aria-label="transferência euros">euros</div>
+        <div class="logo-card" aria-label="transferência pesos MEX">pesos MEX</div>
+        <div class="logo-card" aria-label="transferência bolívares">bolívares</div>
+        <div class="logo-card" aria-label="mercado pago crédito">mercado pago</div>
+        <div class="logo-card" aria-label="mercado pago transfer">mercado pago</div>
+        <div class="logo-card" aria-label="Nequi">Nequi</div>
+        <div class="logo-card" aria-label="Neteller">Neteller</div>
+        <div class="logo-card" aria-label="pago móvel">pago móvel</div>
+        <div class="logo-card" aria-label="PayPal">PayPal</div>
+        <div class="logo-card" aria-label="Payeer">Payeer</div>
+        <div class="logo-card" aria-label="Payoneer">Payoneer</div>
       </div>
     </section>
 
@@ -155,17 +186,21 @@
         <p>Envie uma mensagem e desenhamos juntos a próxima experiência digital da sua marca.</p>
       </div>
       <form class="contact__form glass-card" aria-label="Formulário de contato">
+        <div class="form__honeypot" aria-hidden="true">
+          <label for="website">Deixe este campo vazio</label>
+          <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" />
+        </div>
         <div class="form__group">
           <label for="nome">Nome</label>
-          <input id="nome" name="nome" type="text" autocomplete="name" required />
+          <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Ana Souza" required />
         </div>
         <div class="form__group">
           <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" autocomplete="email" required />
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="seunome@email.com" required />
         </div>
         <div class="form__group">
           <label for="mensagem">Projeto</label>
-          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte sobre prazo, objetivo e canal principal" required></textarea>
         </div>
         <button type="submit" class="btn primary">Enviar mensagem</button>
         <p class="form__hint" role="status">Respondo em menos de 24h.</p>

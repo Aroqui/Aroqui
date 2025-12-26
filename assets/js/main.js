@@ -5,6 +5,7 @@
   const slider = document.querySelector('.projects__track');
   const btnPrev = document.querySelector('.slider-btn--prev');
   const btnNext = document.querySelector('.slider-btn--next');
+  const heroBg = document.querySelector('.hero__bg');
 
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
@@ -12,16 +13,28 @@
       navToggle.setAttribute('aria-expanded', String(isOpen));
       navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
     });
+
+    navMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('nav--open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
 
   const form = document.querySelector('.contact__form');
   if (form) {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
+      const honeypot = form.querySelector('#website');
+      if (honeypot && honeypot.value.trim() !== '') {
+        return;
+      }
+
       form.classList.add('form--submitted');
       const hint = form.querySelector('.form__hint');
       if (hint) {
-        hint.textContent = 'Gracias por tu mensaje. Te responderé pronto.';
+        hint.textContent = 'Mensagem enviada com sucesso. Responderei em breve!';
       }
     });
   }
@@ -42,8 +55,8 @@
 
   const scrollSlider = (direction) => {
     if (!slider) return;
-    const card = slider.querySelector('.project');
-    const scrollAmount = card ? card.getBoundingClientRect().width + 16 : 320;
+    const card = slider.querySelector('.project-card');
+    const scrollAmount = card ? card.getBoundingClientRect().width + 20 : 320;
     slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
   };
 
@@ -53,5 +66,14 @@
 
   if (btnNext) {
     btnNext.addEventListener('click', () => scrollSlider(1));
+  }
+
+  if (heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const parallax = () => {
+      const offset = window.scrollY * 0.18;
+      heroBg.style.transform = `translateY(${offset * -1}px)`;
+      requestAnimationFrame(parallax);
+    };
+    requestAnimationFrame(parallax);
   }
 })();

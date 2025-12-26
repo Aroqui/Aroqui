@@ -5,7 +5,7 @@
   const slider = document.querySelector('.projects__track');
   const btnPrev = document.querySelector('.slider-btn--prev');
   const btnNext = document.querySelector('.slider-btn--next');
-  const heroBg = document.querySelector('.hero__bg');
+  const heroImage = document.querySelector('.hero__image img');
 
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
@@ -68,10 +68,10 @@
     btnNext.addEventListener('click', () => scrollSlider(1));
   }
 
-  if (heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  if (heroImage && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const parallax = () => {
-      const offset = window.scrollY * 0.18;
-      heroBg.style.transform = `translateY(${offset * -1}px)`;
+      const offset = window.scrollY * 0.12;
+      heroImage.style.transform = `translateY(${offset * -1}px) scale(1.02)`;
       requestAnimationFrame(parallax);
     };
     requestAnimationFrame(parallax);

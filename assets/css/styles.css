@@ -179,31 +179,17 @@ h5 {
 }
 
 .brand__logo {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
-  border-radius: 14px;
-  background: linear-gradient(var(--color-paper), var(--color-paper)) padding-box, var(--accent-iridescent) border-box;
-  border: var(--border);
-  box-shadow: 0 10px 30px rgba(8, 9, 42, 0.12);
-  overflow: hidden;
-}
-
-.brand__logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.brand__wordmark {
-  height: 38px;
-  display: none;
-}
-
-.brand__wordmark img {
-  height: 100%;
-  width: auto;
+  border-radius: 12px;
+  background: var(--color-paper);
+  background-image: var(--accent-iridescent);
+  color: var(--color-paper);
+  font-weight: 700;
+  border: 1.5px solid transparent;
+  box-shadow: 0 10px 30px rgba(8, 9, 42, 0.1);
 }
 
 .nav {
@@ -311,41 +297,57 @@ h5 {
 }
 
 .hero {
-  display: grid;
-  gap: 1.5rem;
-  align-items: center;
   position: relative;
   overflow: hidden;
   min-height: 70vh;
-  justify-items: center;
-  text-align: left;
 }
 
-.hero__bg {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(8, 9, 42, 0.12), rgba(8, 9, 42, 0.12)),
-    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat fixed;
-  opacity: 0.85;
-  z-index: 0;
+.hero__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 70vh;
+  overflow: hidden;
+}
+
+.hero__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   transform: translateZ(0);
   will-change: transform;
 }
 
-.hero > * {
-  position: relative;
-  z-index: 1;
+.hero__image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 9, 42, 0.25), rgba(8, 9, 42, 0.5));
+}
+
+.hero__text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 .hero__text h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin: 0.5rem 0;
   max-width: 18ch;
+  color: var(--color-paper);
 }
 
 .lead {
   color: var(--color-muted);
   max-width: 720px;
+  margin: 0 auto;
+  color: #f5f7ff;
 }
 
 .hero__actions {
@@ -561,6 +563,16 @@ h5 {
   margin: 0;
   font-size: 1.35rem;
   color: var(--color-paper);
+}
+
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-card h3 a:hover,
+.project-card h3 a:focus-visible {
+  text-decoration: underline;
 }
 
 .project-card p {

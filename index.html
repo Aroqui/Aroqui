@@ -14,10 +14,7 @@
   <a class="skip-link" href="#conteudo-principal">Saltar para o conteúdo</a>
   <header class="header">
     <div class="brand" aria-label="Marca Horizonte Multimídia">
-      <span class="brand__logo">
-        <img src="assets/img/brand-icon.svg" alt="Horizonte Multimídia" class="brand__icon" />
-      </span>
-      <img src="assets/img/brand-horizontal.svg" alt="Horizonte Multimídia" class="brand__wordmark" />
+      <span class="brand__logo" aria-hidden="true">HM</span>
       <span class="sr-only">Horizonte Multimídia</span>
     </div>
     <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
@@ -37,7 +34,9 @@
 
   <main id="conteudo-principal">
     <section id="hero" class="section hero" aria-label="Apresentação principal">
-      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" alt="" loading="lazy" />
+      </div>
       <div class="hero__text">
         <h1>Serviços digitais que convertem. Experiências claras e memoráveis.</h1>
         <p class="lead">Interfaces sob medida com estética glass + iridescência, alinhadas ao negócio e prontas para produção.</p>
@@ -58,114 +57,107 @@
         <button class="slider-btn slider-btn--prev" type="button" aria-label="Projetos anteriores">←</button>
         <div class="projects__track" role="list">
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Jan 2024</span>
-                </div>
-                <h3>Modern Brand</h3>
-                <p>Design urbano que conecta marcas com audiências modernas em páginas verticais 2:3.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">Branding</span>
-                  <span class="pill pill--light">Design</span>
-                  <span class="pill pill--light">Creative</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Jan 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/modern-brand" target="_blank" rel="noreferrer">Modern Brand</a></h3>
+              <p>Design urbano que conecta marcas com audiências modernas em páginas verticais 2:3.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">Branding</span>
+                <span class="pill pill--light">Design</span>
+                <span class="pill pill--light">Creative</span>
               </div>
             </div>
           </article>
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Feb 2024</span>
-                </div>
-                <h3>Creative Agency</h3>
-                <p>Experiências colaborativas que transformam ideias em realidade com storytelling digital.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">Workspace</span>
-                  <span class="pill pill--light">Innovation</span>
-                  <span class="pill pill--light">Team</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Feb 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/creative-agency" target="_blank" rel="noreferrer">Creative Agency</a></h3>
+              <p>Experiências colaborativas que transformam ideias em realidade com storytelling digital.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">Workspace</span>
+                <span class="pill pill--light">Innovation</span>
+                <span class="pill pill--light">Team</span>
               </div>
             </div>
           </article>
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Mar 2024</span>
-                </div>
-                <h3>Tech Vision</h3>
-                <p>Tecnologia de vanguarda que redefine limites com experiências responsivas 16:9.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">Technology</span>
-                  <span class="pill pill--light">Future</span>
-                  <span class="pill pill--light">Digital</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Mar 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/tech-vision" target="_blank" rel="noreferrer">Tech Vision</a></h3>
+              <p>Tecnologia de vanguarda que redefine limites com experiências responsivas 16:9.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">Technology</span>
+                <span class="pill pill--light">Future</span>
+                <span class="pill pill--light">Digital</span>
               </div>
             </div>
           </article>
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Abr 2024</span>
-                </div>
-                <h3>Digital Trust</h3>
-                <p>Onboarding seguro com microanimações e provas sociais claras para SaaS financeiro.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">Segurança</span>
-                  <span class="pill pill--light">UX Writing</span>
-                  <span class="pill pill--light">SaaS</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Abr 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/digital-trust" target="_blank" rel="noreferrer">Digital Trust</a></h3>
+              <p>Onboarding seguro com microanimações e provas sociais claras para SaaS financeiro.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">Segurança</span>
+                <span class="pill pill--light">UX Writing</span>
+                <span class="pill pill--light">SaaS</span>
               </div>
             </div>
           </article>
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Mai 2024</span>
-                </div>
-                <h3>Retail Vision</h3>
-                <p>Vitrines verticais 2:3 com CTA persistente, foco em coleções e loading otimizado.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">E-commerce</span>
-                  <span class="pill pill--light">Performance</span>
-                  <span class="pill pill--light">Mobile</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Mai 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/retail-vision" target="_blank" rel="noreferrer">Retail Vision</a></h3>
+              <p>Vitrines verticais 2:3 com CTA persistente, foco em coleções e loading otimizado.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">E-commerce</span>
+                <span class="pill pill--light">Performance</span>
+                <span class="pill pill--light">Mobile</span>
               </div>
             </div>
           </article>
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Jun 2024</span>
-                </div>
-                <h3>Workspace Flow</h3>
-                <p>Portal colaborativo 16:9 com navegação lateral, cards modulares e design system consistente.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">Colaboração</span>
-                  <span class="pill pill--light">Design System</span>
-                  <span class="pill pill--light">UI</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Jun 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/workspace-flow" target="_blank" rel="noreferrer">Workspace Flow</a></h3>
+              <p>Portal colaborativo 16:9 com navegação lateral, cards modulares e design system consistente.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">Colaboração</span>
+                <span class="pill pill--light">Design System</span>
+                <span class="pill pill--light">UI</span>
               </div>
             </div>
           </article>
           <article class="project-card glass-card" role="listitem">
-            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80');">
-              <div class="project-card__body">
-                <div class="project-card__meta">
-                  <span class="project-card__tag">Jul 2024</span>
-                </div>
-                <h3>Product Pulse</h3>
-                <p>Landing B2B com narrativa clara, seções em 1:1 e capturas responsivas de produto.</p>
-                <div class="project-card__footer tags tags--dense">
-                  <span class="pill pill--light">B2B</span>
-                  <span class="pill pill--light">Conversão</span>
-                  <span class="pill pill--light">SEO</span>
-                </div>
+            <div class="project-card__media" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80');"></div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__tag">Jul 2024</span>
+              </div>
+              <h3><a href="https://horizonte-multimidia.com/projetos/product-pulse" target="_blank" rel="noreferrer">Product Pulse</a></h3>
+              <p>Landing B2B com narrativa clara, seções em 1:1 e capturas responsivas de produto.</p>
+              <div class="project-card__footer tags tags--dense">
+                <span class="pill pill--light">B2B</span>
+                <span class="pill pill--light">Conversão</span>
+                <span class="pill pill--light">SEO</span>
               </div>
             </div>
           </article>
@@ -180,7 +172,7 @@
         <h2>Parceiros e marcas atendidas.</h2>
         <p>Uma amostra das empresas e fintechs para as quais entregamos experiências digitais.</p>
       </div>
-      <div class="clients__panel glass-card">
+      <div class="clients__panel">
         <img src="assets/img/clients-strip.svg" alt="Logos de clientes e fintechs atendidas" loading="lazy" />
       </div>
     </section>
@@ -216,9 +208,7 @@
 
   <footer class="footer" aria-label="Rodapé">
     <div class="footer__brand">
-      <span class="brand__logo" aria-hidden="true">
-        <img src="assets/img/brand-icon.svg" alt="Horizonte Multimídia" />
-      </span>
+      <span class="brand__logo" aria-hidden="true">HM</span>
       <p>Bem-vinda à mudança construtiva.</p>
     </div>
     <div class="footer__links">

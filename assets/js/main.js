@@ -2,6 +2,9 @@
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.getElementById('nav-menu');
   const scrollTopBtn = document.querySelector('.scroll-top');
+  const slider = document.querySelector('.projects__track');
+  const btnPrev = document.querySelector('.slider-btn--prev');
+  const btnNext = document.querySelector('.slider-btn--next');
 
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
@@ -35,5 +38,20 @@
     });
     window.addEventListener('scroll', toggleScrollTop);
     toggleScrollTop();
+  }
+
+  const scrollSlider = (direction) => {
+    if (!slider) return;
+    const card = slider.querySelector('.project');
+    const scrollAmount = card ? card.getBoundingClientRect().width + 16 : 320;
+    slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  };
+
+  if (btnPrev) {
+    btnPrev.addEventListener('click', () => scrollSlider(-1));
+  }
+
+  if (btnNext) {
+    btnNext.addEventListener('click', () => scrollSlider(1));
   }
 })();

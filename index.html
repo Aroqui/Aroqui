@@ -35,19 +35,18 @@
   <main id="conteudo-principal">
     <section id="hero" class="section hero" aria-label="Apresentação principal">
       <div class="hero__text">
-        <p class="pill">Disponível para novos projetos</p>
         <h1>Vendo serviços com experiências digitais claras e memoráveis.</h1>
         <p class="lead">Uno frontend e UX/UI para criar landing pages, fluxos e dashboards que convertem, com estética glass + iridescência e foco em performance.</p>
         <div class="hero__actions">
           <a class="btn primary" href="#contact">Agendar reunião</a>
           <a class="btn ghost" href="#projects">Ver projetos</a>
         </div>
-      <div class="meta">
-        <span>+5 anos criando produtos web</span>
-        <span>Mobile first e acessíveis</span>
-        <span>Baseado em heurísticas de UX</span>
+        <div class="meta">
+          <span>+5 anos criando produtos web</span>
+          <span>Mobile first e acessíveis</span>
+          <span>Baseado em heurísticas de UX</span>
+        </div>
       </div>
-    </div>
     </section>
 
     <section id="projects" class="section projects" aria-label="Projetos em destaque">
@@ -56,49 +55,79 @@
         <h2>Casos de estudo selecionados</h2>
         <p>Interfaces rápidas, intuitivas e focadas no negócio. Design e desenvolvimento prontos para produção.</p>
       </div>
-      <div class="projects__grid" role="list">
-        <article class="project glass-card" role="listitem">
-          <div class="project__meta">
-            <span class="pill pill--light">Produto SaaS</span>
-            <span class="project__year">2024</span>
-          </div>
-          <h3>Dashboard analítico</h3>
-          <p>Painel modular com visualizações acessíveis, modo claro/escuro e performance otimizada.</p>
-          <ul class="tags">
-            <li>React</li>
-            <li>Design System</li>
-            <li>Acessibilidade</li>
-          </ul>
-          <a class="link" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver caso</a>
-        </article>
-        <article class="project glass-card" role="listitem">
-          <div class="project__meta">
-            <span class="pill pill--light">E-commerce</span>
-            <span class="project__year">2023</span>
-          </div>
-          <h3>Experiência premium</h3>
-          <p>Checkout simplificado, fichas de produto acessíveis e microinterações sutis para aumentar conversões.</p>
-          <ul class="tags">
-            <li>UX Writing</li>
-            <li>Otimização</li>
-            <li>Animações suaves</li>
-          </ul>
-          <a class="link" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver caso</a>
-        </article>
-        <article class="project glass-card" role="listitem">
-          <div class="project__meta">
-            <span class="pill pill--light">Branding digital</span>
-            <span class="project__year">2022</span>
-          </div>
-          <h3>Site imersivo</h3>
-          <p>Narrativa visual glassmorphism, efeitos de iridescência e performance otimizada para mobile first.</p>
-          <ul class="tags">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Motion</li>
-          </ul>
-          <a class="link" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver caso</a>
-        </article>
+      <div class="projects__slider">
+        <button class="slider-btn slider-btn--prev" type="button" aria-label="Projetos anteriores">←</button>
+        <div class="projects__track" role="list">
+          <article class="project glass-card" role="listitem">
+            <div class="project__meta">
+              <span class="pill pill--light">Produto SaaS</span>
+              <span class="project__year">2024</span>
+            </div>
+            <h3>Dashboard analítico</h3>
+            <p>Painel modular com visualizações acessíveis, modo claro/escuro e performance otimizada.</p>
+            <ul class="tags">
+              <li>React</li>
+              <li>Design System</li>
+              <li>Acessibilidade</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
+              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+            </div>
+          </article>
+          <article class="project glass-card" role="listitem">
+            <div class="project__meta">
+              <span class="pill pill--light">E-commerce</span>
+              <span class="project__year">2023</span>
+            </div>
+            <h3>Experiência premium</h3>
+            <p>Checkout simplificado, fichas de produto acessíveis e microinterações sutis para aumentar conversões.</p>
+            <ul class="tags">
+              <li>UX Writing</li>
+              <li>Otimização</li>
+              <li>Animações suaves</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
+              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+            </div>
+          </article>
+          <article class="project glass-card" role="listitem">
+            <div class="project__meta">
+              <span class="pill pill--light">Branding digital</span>
+              <span class="project__year">2022</span>
+            </div>
+            <h3>Site imersivo</h3>
+            <p>Narrativa visual glassmorphism, efeitos de iridescência e performance otimizada para mobile first.</p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Motion</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
+              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+            </div>
+          </article>
+          <article class="project glass-card" role="listitem">
+            <div class="project__meta">
+              <span class="pill pill--light">Landing</span>
+              <span class="project__year">2024</span>
+            </div>
+            <h3>Lançamento rápido</h3>
+            <p>Landing pages de alta conversão com copy clara e SEO técnico otimizado.</p>
+            <ul class="tags">
+              <li>SEO</li>
+              <li>Copy</li>
+              <li>Performance</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn ghost" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 1:1</a>
+              <a class="btn primary" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer">Ver 16:9</a>
+            </div>
+          </article>
+        </div>
+        <button class="slider-btn slider-btn--next" type="button" aria-label="Próximos projetos">→</button>
       </div>
     </section>
 
@@ -108,40 +137,14 @@
         <h2>Design centrado nas pessoas e código pronto para produção.</h2>
         <p>Crio produtos que combinam estratégia, narrativa visual e componentes acessíveis. Lidero projetos end-to-end: pesquisa, wireframes, design system e desenvolvimento frontend.</p>
       </div>
-      <div class="about__grid">
-        <article class="glass-card profile" aria-label="Perfil">
-          <p class="eyebrow">Perfil</p>
-          <h3>Frontend Developer & UX/UI</h3>
-          <p>Performance, acessibilidade e experiências memoráveis para marcas no Brasil e no exterior.</p>
-          <ul class="tags" aria-label="Tecnologias principais">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Figma</li>
-          </ul>
-          <div class="status">
-            <span class="status__dot" aria-hidden="true"></span>
-            Disponível para projetos estratégicos
-          </div>
-        </article>
-        <article class="glass-card" aria-label="Resultados medíveis">
-          <h3>Resultados medíveis</h3>
-          <p>Otimizo tempo de carregamento, fluxo de usuários e conversões com decisões baseadas em dados.</p>
-          <ul class="checklist">
-            <li>Core Web Vitals ajustados</li>
-            <li>Design inclusivo e legível</li>
-            <li>Arquitetura escalável</li>
-          </ul>
-        </article>
-        <article class="glass-card" aria-label="Processo de trabalho">
-          <h3>Processo de trabalho</h3>
-          <p>Atuo de forma colaborativa, com ciclos curtos de feedback e entregas iterativas.</p>
-          <ul class="steps">
-            <li><span>1</span> Pesquisa e definição</li>
-            <li><span>2</span> Protótipos e testes</li>
-            <li><span>3</span> Desenvolvimento e QA</li>
-          </ul>
-        </article>
+      <div class="about__grid logos-grid" aria-label="Marcas atendidas">
+        <div class="logo-card">Marca 01</div>
+        <div class="logo-card">Marca 02</div>
+        <div class="logo-card">Marca 03</div>
+        <div class="logo-card">Marca 04</div>
+        <div class="logo-card">Marca 05</div>
+        <div class="logo-card">Marca 06</div>
+        <div class="logo-card">Marca 07</div>
       </div>
     </section>
 

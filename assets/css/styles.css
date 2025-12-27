@@ -743,6 +743,128 @@ h5 {
   color: var(--color-primary-strong);
 }
 
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.testimonials {
+  padding: 3rem 0 2.5rem;
+  display: grid;
+  gap: 1.75rem;
+}
+
+.testimonials__title {
+  text-align: center;
+  font-size: clamp(1.6rem, 2vw, 1.9rem);
+  margin: 0;
+  color: #1a1d81;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(8, 9, 42, 0.08);
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.85rem;
+  border: 1px solid rgba(8, 9, 42, 0.03);
+}
+
+.testimonial-card__header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.testimonial-card__avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(87, 140, 255, 0.2);
+}
+
+.testimonial-card__name {
+  font-weight: 700;
+  color: #1a1d81;
+}
+
+.testimonial-card__text {
+  margin: 0.15rem 0 0;
+  color: #4a4c66;
+  line-height: 1.5;
+}
+
+.testimonial-card__stars {
+  color: #f5b400;
+  letter-spacing: 0.15rem;
+  font-size: 1rem;
+}
+
+.testimonials__dots {
+  display: flex;
+  gap: 0.35rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(26, 29, 129, 0.25);
+}
+
+.dot--active {
+  width: 12px;
+  height: 12px;
+  background: #2b30da;
+}
+
+.brands {
+  padding: 2rem 0 1rem;
+}
+
+.brands__grid {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.brand {
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+}
+
+.brand img {
+  max-height: 32px;
+  width: auto;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.brand img:hover,
+.brand img:focus-visible {
+  filter: grayscale(0);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
 .slider-btn {
   position: absolute;
   top: 50%;

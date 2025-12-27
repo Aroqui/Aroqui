@@ -1,0 +1,11 @@
+<svg width="220" height="140" viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="gradTech" x1="0" y1="0" x2="220" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57c1ff"/>
+      <stop offset="1" stop-color="#2b30da"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="16" width="200" height="108" rx="18" fill="#0a0c24" stroke="url(#gradTech)" stroke-width="6"/>
+  <path d="M50 70c10-20 30-30 60-30s50 10 60 30c-10 20-30 30-60 30s-50-10-60-30z" stroke="url(#gradTech)" stroke-width="8" fill="none"/>
+  <circle cx="110" cy="70" r="14" fill="url(#gradTech)"/>
+</svg>

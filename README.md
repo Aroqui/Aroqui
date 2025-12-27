@@ -4,7 +4,8 @@
 
 ## Estrutura
 - `index.html`: Maquetado principal com hero em full width/parallax, cards de projetos em slider, grade de logos e formulário anti-spam.
-- `assets/css/styles.css`: Estilos responsivos focados em acessibilidade, glassmorphism e iridescência (menus, cards, logos).
+- `*.html` (modern-brand, creative-agency, tech-vision, digital-trust, retail-vision, workspace-flow, product-pulse): páginas internas de cada marca com logo, descrição e blocos de manual/social.
+- `assets/css/styles.css`: Estilos responsivos focados em acessibilidade, glassmorphism e iridescência (menus, cards, logos e páginas internas).
 - `assets/js/main.js`: Interações leves (menu móvel com fechamento automático, slider horizontal, parallax e confirmação do formulário).
 
 ## Como usar

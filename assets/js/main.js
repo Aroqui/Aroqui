@@ -6,6 +6,8 @@
   const btnPrev = document.querySelector('.slider-btn--prev');
   const btnNext = document.querySelector('.slider-btn--next');
   const heroImage = document.querySelector('.hero__image img');
+  const testimonialsTrack = document.querySelector('.testimonials__track');
+  const testimonialDots = document.querySelectorAll('.testimonials__dots .dot');
 
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
@@ -68,6 +70,23 @@
     btnNext.addEventListener('click', () => scrollSlider(1));
   }
 
+  const moveTestimonials = (index) => {
+    if (!testimonialsTrack) return;
+    const cards = Array.from(testimonialsTrack.querySelectorAll('.testimonial-card'));
+    if (!cards.length) return;
+    const clamped = Math.max(0, Math.min(index, cards.length - 1));
+    const gap = parseFloat(getComputedStyle(testimonialsTrack).columnGap || '12');
+    const width = cards[0].getBoundingClientRect().width;
+    testimonialsTrack.style.transform = `translateX(${-(width + gap) * clamped}px)`;
+    testimonialDots.forEach((dot, i) => {
+      dot.classList.toggle('dot--active', i === clamped);
+    });
+  };
+
+  testimonialDots.forEach((dot, idx) => {
+    dot.addEventListener('click', () => moveTestimonials(idx));
+  });
+
   if (heroImage && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const parallax = () => {
       const offset = window.scrollY * 0.12;
@@ -76,4 +95,6 @@
     };
     requestAnimationFrame(parallax);
   }
+
+  moveTestimonials(1);
 })();

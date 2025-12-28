@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Template | Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/internal.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand-link" href="../index.html" aria-label="Horizonte Multimídia">HM</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="#projects">Projects</a>
+        <a class="site-nav__link" href="#archive">Archive</a>
+        <a class="site-nav__link" href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" id="conteudo-principal">
+    <article class="project" id="project"></article>
+  </main>
+
+  <script>
+    const pageData = {
+      eyebrow: 'Case Study',
+      title: 'Project Title',
+      subtitle: 'Project subtitle that briefly describes the product or experience.',
+      meta: [
+        { label: 'Role', value: 'Product Designer' },
+        { label: 'Time', value: '2024 — 8 weeks' },
+        { label: 'Type', value: 'Mobile / Web' },
+      ],
+      intro:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate, felis ut feugiat rutrum, justo risus iaculis massa, vel varius est eros ut turpis. Morbi vehicula efficitur nisl, at ultrices dui dictum sed. Proin dapibus augue at sem dictum viverra.',
+      cta: { label: 'Visit project website →', href: '#' },
+      sections: [
+        {
+          id: 'section-1',
+          title: 'Section One',
+          paragraphs: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan metus id leo tempor.',
+            'Vivamus non dui vel arcu sodales consequat. Morbi vitae nibh ac lectus iaculis tristique.',
+          ],
+          media: true,
+        },
+        {
+          id: 'section-2',
+          title: 'Section Two',
+          paragraphs: [
+            'Aliquam et varius nunc. Sed vulputate, lacus quis cursus sagittis, felis ex aliquet mauris.',
+            'Mauris posuere eros at velit hendrerit, sed dapibus elit facilisis.',
+          ],
+          media: true,
+        },
+        {
+          id: 'section-3',
+          title: 'Section Three',
+          paragraphs: [
+            'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          ],
+          media: false,
+        },
+      ],
+    };
+  </script>
+  <script src="../assets/js/internal.js"></script>
+</body>
+</html>

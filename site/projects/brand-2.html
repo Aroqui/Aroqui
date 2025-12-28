@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand Two | Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/internal.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand-link" href="../index.html" aria-label="Horizonte Multimídia">HM</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="#projects">Projects</a>
+        <a class="site-nav__link" href="#archive">Archive</a>
+        <a class="site-nav__link" href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" id="conteudo-principal">
+    <article class="project" id="project"></article>
+  </main>
+
+  <script>
+    const pageData = {
+      eyebrow: 'Case Study',
+      title: 'Brand Two',
+      subtitle: 'A focused experience for a product-led fintech launch.',
+      meta: [
+        { label: 'Role', value: 'Product Lead' },
+        { label: 'Time', value: '2023 — 12 weeks' },
+        { label: 'Type', value: 'Fintech / Web' },
+      ],
+      intro:
+        'Designed a streamlined experience for onboarding and feature discovery, balancing clarity with brand expression across 16:9 layouts.',
+      cta: { label: 'View live prototype →', href: '#' },
+      sections: [
+        {
+          id: 'research',
+          title: 'Research & Framing',
+          paragraphs: [
+            'Mapped decision points in the onboarding journey to reduce friction.',
+            'Defined success metrics tied to activation and conversion.',
+          ],
+          media: true,
+        },
+        {
+          id: 'visuals',
+          title: 'Visual Direction',
+          paragraphs: [
+            'Created a gradient-driven visual language with clear hierarchy and legible typography scales.',
+            'Applied the system to dashboards, marketing pages, and support flows.',
+          ],
+          media: true,
+        },
+        {
+          id: 'delivery',
+          title: 'Delivery',
+          paragraphs: [
+            'Documented patterns, provided assets, and synced with engineering for handoff.',
+          ],
+          media: false,
+        },
+      ],
+    };
+  </script>
+  <script src="../assets/js/internal.js"></script>
+</body>
+</html>

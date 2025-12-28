@@ -13,7 +13,8 @@
   --border: #e2e7ef;
   --bg: #ffffff;
   --radius: 14px;
-  --shadow: 0 14px 30px rgba(16, 24, 40, 0.08);
+  --shadow: 0 25px 60px rgba(8, 9, 42, 0.15);
+  --accent-iridescent: linear-gradient(135deg, #578cff, #8e57ff, #5757ff, #57c1ff, #c557ff, #acacff);
 }
 
 *,

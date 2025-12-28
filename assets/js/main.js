@@ -96,5 +96,5 @@
     requestAnimationFrame(parallax);
   }
 
-  moveTestimonials(1);
+  moveTestimonials(0);
 })();

@@ -7,61 +7,96 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/internal-dim.css" />
 </head>
 <body>
-  <a class="skip-link" href="#conteudo-principal">Saltar para o conteúdo</a>
-  <header class="header">
-    <div class="brand" aria-label="Marca Horizonte Multimídia">
-      <span class="brand__logo" aria-hidden="true">HM</span>
-      <span class="sr-only">Horizonte Multimídia</span>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand-link" href="index.html" aria-label="Horizonte Multimídia">HM</a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a class="site-nav__link" href="index.html#projects">Projetos</a>
+        <a class="site-nav__link" href="index.html#clients">Clientes</a>
+        <a class="site-nav__link" href="index.html#contact">Contato</a>
+      </nav>
     </div>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="nav-menu" class="nav" aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html#hero">Início</a></li>
-        <li><a href="index.html#projects">Projetos</a></li>
-        <li><a href="index.html#clients">Clientes</a></li>
-        <li><a href="index.html#contact">Contato</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main id="conteudo-principal" class="brand-page">
-    <section class="brand-logo-full">
-      <img src="assets/img/brands/digital-trust.svg" alt="Logo Digital Trust" />
-    </section>
+  <main id="conteudo-principal" class="main">
+    <article class="project">
+      <section class="project-hero container">
+        <p class="eyebrow">Estudo de caso</p>
+        <h1 class="project-hero__title">Digital Trust</h1>
+        <p class="project-hero__subtitle">Fluxos de confiança para SaaS financeiro, com microinterações de segurança e onboarding guiado em interfaces claras.</p>
 
-    <section class="glass-card brand-description">
-      <p class="eyebrow">Identidade visual</p>
-      <h1>Digital Trust</h1>
-      <p class="lead">Fluxos de confiança para SaaS financeiro, com microinterações de segurança e onboarding guiado em interfaces claras.</p>
-    </section>
+        <div class="meta">
+          <div class="meta__item">
+            <span class="meta__label">Role</span>
+            <span class="meta__value">Product Designer</span>
+          </div>
+          <div class="meta__item">
+            <span class="meta__label">Período</span>
+            <span class="meta__value">2024</span>
+          </div>
+          <div class="meta__item">
+            <span class="meta__label">Escopo</span>
+            <span class="meta__value">Produto / Web</span>
+          </div>
+        </div>
 
-    <section class="brand-duo">
-      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Moodboard Digital Trust 1" />
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Moodboard Digital Trust 2" />
-    </section>
+        <div class="project-intro">
+          <p>Desenhamos fluxos de onboarding e segurança para um SaaS financeiro, priorizando clareza, confiança e comunicação transparente de status.</p>
+          <a class="project-cta" href="https://www.instagram.com/horizontemultimidia/" target="_blank" rel="noreferrer">Ver no Instagram →</a>
+        </div>
+      </section>
 
-    <section class="brand-sign">
-      <img src="assets/img/brands/digital-trust.svg" alt="Assinatura Digital Trust" />
-    </section>
+      <aside class="toc container" aria-label="Conteúdo">
+        <p class="toc__title">Conteúdo</p>
+        <ol class="toc__list">
+          <li><a href="#section-1">Pesquisa de usuários</a></li>
+          <li><a href="#section-2">Segurança visível</a></li>
+          <li><a href="#section-3">Onboarding guiado</a></li>
+        </ol>
+      </aside>
 
-    <section class="brand-palette">
-      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Paleta cromática Digital Trust" />
-      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Mockups Digital Trust" />
-    </section>
+      <section class="case container">
+        <section class="case-section" id="section-1">
+          <h3 class="case-section__title">Pesquisa de usuários</h3>
+          <div class="case-section__body">
+            <p>Identificamos pontos de ansiedade em fluxos de autenticação e depósitos, priorizando mensagens claras sobre riscos e cobertura.</p>
+            <p>Testamos variações de layout para garantir legibilidade em ambientes de pouca luz e telas menores.</p>
+          </div>
+          <figure class="case-section__media" role="img" aria-label="Pesquisa Digital Trust">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1400&q=80" alt="Fluxos de segurança e pesquisa com usuários" />
+          </figure>
+        </section>
 
-    <div class="brand-actions" style="justify-content:center;">
-      <a class="btn ghost" href="https://www.instagram.com/horizontemultimidia/" target="_blank" rel="noreferrer">Instagram</a>
-    </div>
+        <section class="case-section" id="section-2">
+          <h3 class="case-section__title">Segurança visível</h3>
+          <div class="case-section__body">
+            <p>Criamos um vocabulário visual com badges, cores de estado e microinterações que comunicam proteção em tempo real.</p>
+            <p>Os componentes foram documentados em tokens reutilizáveis para web e mobile, mantendo consistência entre squads.</p>
+          </div>
+          <figure class="case-section__media" role="img" aria-label="Componentes Digital Trust">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Componentes visuais e tokens da Digital Trust" />
+          </figure>
+        </section>
 
-    <a class="back-link" href="index.html#projects">← Voltar para Projetos</a>
+        <section class="case-section" id="section-3">
+          <h3 class="case-section__title">Onboarding guiado</h3>
+          <div class="case-section__body">
+            <p>Desenhamos passo a passo com mensagens de status, checklists e provas visuais para criar confiança em poucos cliques.</p>
+            <p>As telas 16:9 foram pensadas para demos e pitches, enquanto cards 1:1 servem de apoio em campanhas.</p>
+          </div>
+          <figure class="case-section__media" role="img" aria-label="Onboarding Digital Trust">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80" alt="Fluxos de onboarding Digital Trust" />
+          </figure>
+        </section>
+      </section>
+
+      <div class="container back-link__wrap">
+        <a class="back-link" href="index.html#projects">← Voltar para Projetos</a>
+      </div>
+    </article>
   </main>
-
-  <button class="scroll-top" type="button" aria-label="Voltar ao topo">↑</button>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

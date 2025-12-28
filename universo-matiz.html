@@ -10,11 +10,23 @@
   <link rel="stylesheet" href="assets/css/internal-dim.css" />
 </head>
 <body>
-  <main id="conteudo-principal" class="project-page">
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand-link" href="index.html" aria-label="Horizonte Multimídia">HM</a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a class="site-nav__link" href="index.html#projects">Projetos</a>
+        <a class="site-nav__link" href="index.html#clients">Clientes</a>
+        <a class="site-nav__link" href="index.html#contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" class="main">
     <article class="project">
       <section class="project-hero container">
+        <p class="eyebrow">Identidade visual</p>
         <h1 class="project-hero__title">Universo Matiz</h1>
-        <h3 class="project-hero__subtitle">Identidade modular e cromática para lançamentos digitais em ritmo acelerado.</h3>
+        <p class="project-hero__subtitle">Identidade modular e cromática para lançamentos digitais em ritmo acelerado.</p>
 
         <div class="meta">
           <div class="meta__item">
@@ -41,6 +53,15 @@
         </div>
       </section>
 
+      <aside class="toc container" aria-label="Conteúdo">
+        <p class="toc__title">Conteúdo</p>
+        <ol class="toc__list">
+          <li><a href="#section-1">Pesquisa e direção</a></li>
+          <li><a href="#section-2">Sistema de identidade</a></li>
+          <li><a href="#section-3">Aplicações e kits</a></li>
+        </ol>
+      </aside>
+
       <section class="case container">
         <section class="case-section" id="section-1">
           <h3 class="case-section__title">Pesquisa e direção</h3>
@@ -48,8 +69,8 @@
             <p>Mapeamos stakeholders e jornadas para definir pilares de mensagem e tons cromáticos que sustentam a marca.</p>
             <p>Estabelecemos critérios de legibilidade e contraste para uso em web e mobile.</p>
           </div>
-          <figure class="case-media" role="img" aria-label="Placeholder visual">
-            <div class="case-media__ph"></div>
+          <figure class="case-section__media" role="img" aria-label="Moodboard cromático">
+            <img src="https://images.unsplash.com/photo-1556742049-9083cbd34b05?auto=format&fit=crop&w=1400&q=80" alt="Moodboard cromático para Universo Matiz" />
           </figure>
         </section>
 
@@ -59,8 +80,8 @@
             <p>Criamos um set modular de logos, gradientes e tipografia em escalas claras, documentados para uso rápido.</p>
             <p>Padrões para botões, pills e cartões de dados asseguram consistência e velocidade de handoff.</p>
           </div>
-          <figure class="case-media" role="img" aria-label="Placeholder visual">
-            <div class="case-media__ph"></div>
+          <figure class="case-section__media" role="img" aria-label="Aplicações da identidade">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1400&q=80" alt="Aplicações da identidade Universo Matiz" />
           </figure>
         </section>
 
@@ -70,8 +91,8 @@
             <p>Preparamos kits de lançamento para marketing e produto, cobrindo formatos 16:9 e 1:1.</p>
             <p>Tokens e assets exportáveis reduziram esforço de produção em ciclos semanais.</p>
           </div>
-          <figure class="case-media" role="img" aria-label="Placeholder visual">
-            <div class="case-media__ph"></div>
+          <figure class="case-section__media" role="img" aria-label="Entregáveis e mockups">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80" alt="Mockups e entregáveis Universo Matiz" />
           </figure>
         </section>
       </section>

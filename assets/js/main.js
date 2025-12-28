@@ -75,8 +75,8 @@
     const cards = Array.from(testimonialsTrack.querySelectorAll('.testimonial-card'));
     if (!cards.length) return;
     const clamped = Math.max(0, Math.min(index, cards.length - 1));
-    const gap = parseFloat(getComputedStyle(testimonialsTrack).columnGap || '12');
     const width = cards[0].getBoundingClientRect().width;
+    const gap = parseFloat(getComputedStyle(testimonialsTrack).columnGap || '12');
     testimonialsTrack.style.transform = `translateX(${-(width + gap) * clamped}px)`;
     testimonialDots.forEach((dot, i) => {
       dot.classList.toggle('dot--active', i === clamped);

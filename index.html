@@ -298,28 +298,30 @@
         <h2>Vamos falar sobre o seu próximo projeto?</h2>
         <p>Envie uma mensagem e desenhamos juntos a próxima experiência digital da sua marca.</p>
       </div>
-      <form class="contact__form glass-card" aria-label="Formulário de contato">
-        <div class="form__honeypot" aria-hidden="true">
-          <label for="website">Deixe este campo vazio</label>
-          <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" />
+      <div class="contact__layout">
+        <form class="contact__form glass-card" aria-label="Formulário de contato">
+          <div class="form__honeypot" aria-hidden="true">
+            <label for="website">Deixe este campo vazio</label>
+            <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" />
+          </div>
+          <div class="form__group">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Ana Souza" required />
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="seunome@email.com" required />
+          </div>
+          <div class="form__group">
+            <label for="mensagem">Projeto</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte sobre prazo, objetivo e canal principal" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Enviar mensagem</button>
+          <p class="form__hint" role="status">Respondo em menos de 24h.</p>
+        </form>
+        <div class="contact__map">
+          <iframe title="Mapa Costeira do Pirajubaé, Florianópolis" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.6955709967844!2d-48.555!3d-27.635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739240fe5da4f%3A0x9b8b4f2edb6ed124!2sCosteira%20do%20Pirajuba%C3%A9%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="form__group">
-          <label for="nome">Nome</label>
-          <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Ana Souza" required />
-        </div>
-        <div class="form__group">
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="email" autocomplete="email" placeholder="seunome@email.com" required />
-        </div>
-        <div class="form__group">
-          <label for="mensagem">Projeto</label>
-          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte sobre prazo, objetivo e canal principal" required></textarea>
-        </div>
-        <button type="submit" class="btn primary">Enviar mensagem</button>
-        <p class="form__hint" role="status">Respondo em menos de 24h.</p>
-      </form>
-      <div class="contact__map">
-        <iframe title="Mapa Costeira do Pirajubaé, Florianópolis" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.6955709967844!2d-48.555!3d-27.635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739240fe5da4f%3A0x9b8b4f2edb6ed124!2sCosteira%20do%20Pirajuba%C3%A9%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>

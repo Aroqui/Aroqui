@@ -1,0 +1,11 @@
+
+<svg width="240" height="140" viewBox="0 0 240 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="240" y2="140" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8e57ff"/>
+      <stop offset="1" stop-color="#57c1ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="14" width="216" height="112" rx="18" fill="#0b0d26" stroke="url(#grad)" stroke-width="6"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="url(#grad)" font-family="'Fredoka','Open Sans',sans-serif" font-size="32" font-weight="700">Wigo</text>
+</svg>

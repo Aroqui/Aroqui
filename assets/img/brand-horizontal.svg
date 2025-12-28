@@ -1,0 +1,11 @@
+<svg width="960" height="280" viewBox="0 0 960 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hmGradient2" x1="0" y1="0" x2="0" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5b7c8"/>
+      <stop offset="1" stop-color="#2b30da"/>
+    </linearGradient>
+  </defs>
+  <path d="M120 40v160c0 30 24 54 54 54s54-24 54-54V140h58v60c0 30 24 54 54 54s54-24 54-54V40" stroke="url(#hmGradient2)" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="360" y="136" font-family="'Fredoka', 'Open Sans', 'Arial', sans-serif" font-size="96" font-weight="700" fill="url(#hmGradient2)">HORIZONTE</text>
+  <text x="360" y="220" font-family="'Fredoka', 'Open Sans', 'Arial', sans-serif" font-size="88" font-weight="600" fill="url(#hmGradient2)">MULTIMÍDIA</text>
+</svg>

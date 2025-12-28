@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brand One | Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/internal-dim.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand-link" href="../index.html" aria-label="Horizonte Multimídia">HM</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav__link" href="#projects">Projects</a>
+        <a class="site-nav__link" href="#archive">Archive</a>
+        <a class="site-nav__link" href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main" id="conteudo-principal">
+    <article class="project" id="project"></article>
+  </main>
+
+  <script>
+    const pageData = {
+      eyebrow: 'Brand Case Study',
+      title: 'Brand One',
+      subtitle: 'Elevating a modern brand with modular visuals and product-first storytelling.',
+      meta: [
+        { label: 'Role', value: 'Lead Designer' },
+        { label: 'Time', value: '2024 — 10 weeks' },
+        { label: 'Type', value: 'Brand / Web' },
+      ],
+      intro:
+        'Created a modular identity system to support fast product launches, keeping consistency across landing pages, social kits, and dashboards.',
+      cta: { label: 'Visit brand site →', href: '#' },
+      sections: [
+        {
+          id: 'discovery',
+          title: 'Discovery & Strategy',
+          paragraphs: [
+            'Interviewed stakeholders and mapped user flows to define the core brand promise and tone.',
+            'Aligned messaging pillars to guide visual and verbal outputs across channels.',
+          ],
+          media: true,
+        },
+        {
+          id: 'identity',
+          title: 'Identity System',
+          paragraphs: [
+            'Built a flexible logo set, iridescent gradients, and typography scales to stay cohesive on web and mobile.',
+            'Documented patterns for buttons, pills, and data cards to streamline production.',
+          ],
+          media: true,
+        },
+        {
+          id: 'handoff',
+          title: 'Handoff & Kits',
+          paragraphs: [
+            'Packaged design tokens, components, and launch templates for marketing and product teams.',
+          ],
+          media: false,
+        },
+      ],
+    };
+  </script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

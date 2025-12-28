@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hmGradient" x1="256" y1="60" x2="256" y2="452" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5b7c8"/>
+      <stop offset="1" stop-color="#2b30da"/>
+    </linearGradient>
+  </defs>
+  <path d="M136 96v256c0 35.346 28.654 64 64 64h0c35.346 0 64-28.654 64-64V216h48v136c0 35.346 28.654 64 64 64h0c35.346 0 64-28.654 64-64V96" stroke="url(#hmGradient)" stroke-width="64" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

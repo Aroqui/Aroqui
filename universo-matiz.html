@@ -7,17 +7,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/internal-dim.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand-link" href="index.html" aria-label="Horizonte Multimídia">HM</a>
-      <nav class="site-nav" aria-label="Navegação principal">
-        <a class="site-nav__link" href="index.html#projects">Projetos</a>
-        <a class="site-nav__link" href="index.html#clients">Clientes</a>
-        <a class="site-nav__link" href="index.html#contact">Contato</a>
-      </nav>
+  <a class="skip-link" href="#conteudo-principal">Saltar para o conteúdo</a>
+  <header class="header">
+    <a class="brand brand--link" href="index.html" aria-label="Marca Horizonte Multimídia">
+      <span class="brand__logo" aria-hidden="true">HM</span>
+      <span class="sr-only">Horizonte Multimídia</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-menu" class="nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html#hero">Início</a></li>
+        <li><a href="index.html#projects">Projetos</a></li>
+        <li><a href="index.html#clients">Clientes</a></li>
+        <li><a href="index.html#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="header__icons">
+      <a class="nav__icon" href="mailto:adrirodriguez@uade.edu.ar" aria-label="E-mail">✉</a>
+      <a class="nav__icon" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <a class="nav__icon" href="https://www.instagram.com/horizontemultimidia/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
     </div>
   </header>
 
@@ -102,5 +118,15 @@
       </div>
     </article>
   </main>
+
+  <footer class="footer" aria-label="Rodapé">
+    <div class="footer__brand">
+      <span class="brand__logo" aria-hidden="true">HM</span>
+      <p>Bem-vinda à mudança construtiva.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" type="button" aria-label="Voltar ao topo">↑</button>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

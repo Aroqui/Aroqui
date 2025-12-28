@@ -8,6 +8,9 @@
   const heroImage = document.querySelector('.hero__image img');
   const testimonialsTrack = document.querySelector('.testimonials__track');
   const testimonialDots = document.querySelectorAll('.testimonials__dots .dot');
+  const testimonialPrev = document.querySelector('.testimonials__btn--prev');
+  const testimonialNext = document.querySelector('.testimonials__btn--next');
+  let testimonialIndex = 0;
 
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
@@ -81,11 +84,20 @@
     testimonialDots.forEach((dot, i) => {
       dot.classList.toggle('dot--active', i === clamped);
     });
+    testimonialIndex = clamped;
   };
 
   testimonialDots.forEach((dot, idx) => {
     dot.addEventListener('click', () => moveTestimonials(idx));
   });
+
+  if (testimonialPrev) {
+    testimonialPrev.addEventListener('click', () => moveTestimonials(testimonialIndex - 1));
+  }
+
+  if (testimonialNext) {
+    testimonialNext.addEventListener('click', () => moveTestimonials(testimonialIndex + 1));
+  }
 
   if (heroImage && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const parallax = () => {

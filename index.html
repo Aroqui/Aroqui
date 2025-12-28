@@ -28,19 +28,13 @@
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#clients">Clientes</a></li>
         <li><a href="#contact">Contato</a></li>
-        <li class="nav__icons">
-          <a class="nav__icon" href="mailto:adrirodriguez@uade.edu.ar" aria-label="E-mail">
-            ✉
-          </a>
-          <a class="nav__icon" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            in
-          </a>
-          <a class="nav__icon" href="https://www.instagram.com/horizontemultimidia/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            ◎
-          </a>
-        </li>
       </ul>
     </nav>
+    <div class="header__icons">
+      <a class="nav__icon" href="mailto:adrirodriguez@uade.edu.ar" aria-label="E-mail">✉</a>
+      <a class="nav__icon" href="https://www.linkedin.com/in/aroqui" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+      <a class="nav__icon" href="https://www.instagram.com/horizontemultimidia/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+    </div>
   </header>
 
   <main id="conteudo-principal">
@@ -180,9 +174,12 @@
     <section id="clients" class="section clients" aria-label="Clientes">
       <div class="container">
         <section class="testimonials" aria-label="Testemunhos de clientes">
-          <p class="eyebrow">Clientes</p>
-          <h2 class="testimonials__title">Empreendedores com grandes projetos e sonhos</h2>
+          <div class="section__header">
+            <p class="eyebrow">Clientes</p>
+            <h2>Empreendedores com grandes projetos e sonhos</h2>
+          </div>
           <div class="testimonials__viewport">
+            <button class="slider-btn slider-btn--prev testimonials__btn testimonials__btn--prev" type="button" aria-label="Depoimento anterior">←</button>
             <div class="testimonials__track">
               <article class="testimonial-card">
                 <div class="testimonial-card__header">
@@ -255,6 +252,7 @@
                 <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
               </article>
             </div>
+            <button class="slider-btn slider-btn--next testimonials__btn testimonials__btn--next" type="button" aria-label="Próximo depoimento">→</button>
           </div>
           <div class="testimonials__dots" aria-label="Controle de depoimentos">
             <button class="dot" data-index="0"></button>

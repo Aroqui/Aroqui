@@ -206,6 +206,21 @@ h5 {
   justify-self: center;
 }
 
+.nav.nav--open {
+  display: block;
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: var(--border);
+  border-image: var(--accent-iridescent) 1;
+  border-radius: 16px;
+  padding: 0.75rem 1rem 0.5rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
 .nav ul {
   list-style: none;
   margin: 0;
@@ -239,6 +254,10 @@ h5 {
   align-items: center;
   margin-left: auto;
   margin-right: 0;
+}
+
+.nav.nav--open ul {
+  width: 100%;
 }
 
 .nav__icon {
@@ -882,14 +901,14 @@ h5 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(26, 29, 129, 0.25);
-  border: 1px solid rgba(26, 29, 129, 0.35);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .dot--active {
   width: 12px;
   height: 12px;
-  background: #2b30da;
+  background: #ffffff;
 }
 
 .testimonials__viewport .slider-btn {

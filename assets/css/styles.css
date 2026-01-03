@@ -545,6 +545,11 @@ h5 {
   margin-top: 1.5rem;
 }
 
+.about__grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
 .projects__slider {
   position: relative;
   margin-top: 1.25rem;
@@ -670,6 +675,41 @@ h5 {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: auto;
+}
+
+.about__card {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+  min-height: 100%;
+}
+
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+}
+
+.about__stat {
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  background: rgba(43, 48, 218, 0.06);
+  border: 1px solid rgba(87, 140, 255, 0.18);
+  display: grid;
+  gap: 0.2rem;
+  height: 100%;
+}
+
+.about__stat-number {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--color-primary-strong);
+}
+
+.about__stat-label {
+  margin: 0;
+  color: var(--color-muted);
 }
 
 .brand-page {

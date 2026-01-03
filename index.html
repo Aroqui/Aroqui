@@ -53,10 +53,10 @@
       </div>
     </section>
 
-    <section id="projects" class="section projects" aria-label="Projetos em destaque">
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
       <div class="section__header">
         <p class="eyebrow">Projetos</p>
-        <h2>Casos de estudo selecionados</h2>
+        <h2 id="projects-title">Casos de estudo selecionados</h2>
         <p>Interfaces rápidas, intuitivas e focadas no negócio. Design e desenvolvimento prontos para produção.</p>
       </div>
       <div class="projects__slider">
@@ -172,10 +172,10 @@
       </div>
     </section>
 
-    <section id="about" class="section about" aria-label="Sobre Horizonte Multimídia">
+    <section id="about" class="section about" aria-labelledby="about-title">
       <div class="section__header">
         <p class="eyebrow">Sobre</p>
-        <h2>Design e front-end com visão de produto</h2>
+        <h2 id="about-title">Design e front-end com visão de produto</h2>
         <p>Sou Adrián Rodriguez, designer multimídia focado em interfaces e narrativas digitais que convertem. Eu penso junto com o negócio, prototipo rápido e entrego assets prontos para marketing.</p>
       </div>
       <div class="about__grid">
@@ -199,30 +199,30 @@
             <li><span>2</span>CMOs precisando de campanhas e LPs localizadas.</li>
             <li><span>3</span>Equipes de produto que querem consistência em múltiplos canais.</li>
           </ul>
-          <div class="about__stats" aria-label="Indicadores de entrega">
+          <dl class="about__stats" aria-label="Indicadores de entrega">
             <div class="about__stat">
-              <div class="about__stat-number">40+</div>
-              <p class="about__stat-label">Projetos shipados entre 2020-2024</p>
+              <dt class="about__stat-number">40+</dt>
+              <dd class="about__stat-label">Projetos shipados entre 2020-2024</dd>
             </div>
             <div class="about__stat">
-              <div class="about__stat-number">3 idiomas</div>
-              <p class="about__stat-label">Copy e design para PT / ES / EN</p>
+              <dt class="about__stat-number">3 idiomas</dt>
+              <dd class="about__stat-label">Copy e design para PT / ES / EN</dd>
             </div>
             <div class="about__stat">
-              <div class="about__stat-number">72h</div>
-              <p class="about__stat-label">Tempo médio para protótipo clicável</p>
+              <dt class="about__stat-number">72h</dt>
+              <dd class="about__stat-label">Tempo médio para protótipo clicável</dd>
             </div>
-          </div>
+          </dl>
         </article>
       </div>
     </section>
 
-    <section id="clients" class="section clients" aria-label="Clientes">
+    <section id="clients" class="section clients" aria-labelledby="clients-title">
       <div class="container">
-        <section class="testimonials" aria-label="Testemunhos de clientes">
+        <section class="testimonials" aria-labelledby="clients-title">
           <div class="section__header">
             <p class="eyebrow">Clientes</p>
-            <h2>Empreendedores com grandes projetos e sonhos</h2>
+            <h2 id="clients-title">Empreendedores com grandes projetos e sonhos</h2>
           </div>
           <div class="testimonials__viewport">
             <button class="slider-btn slider-btn--prev testimonials__btn testimonials__btn--prev" type="button" aria-label="Depoimento anterior">←</button>
@@ -336,14 +336,14 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact" aria-label="Contato">
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
       <div class="section__header">
         <p class="eyebrow">Contato</p>
-        <h2>Vamos falar sobre o seu próximo projeto?</h2>
+        <h2 id="contact-title">Vamos falar sobre o seu próximo projeto?</h2>
         <p>Envie uma mensagem e desenhamos juntos a próxima experiência digital da sua marca.</p>
       </div>
       <div class="contact__layout">
-        <form class="contact__form glass-card" aria-label="Formulário de contato">
+        <form class="contact__form glass-card" aria-labelledby="contact-title">
           <div class="form__honeypot" aria-hidden="true">
             <label for="website">Deixe este campo vazio</label>
             <input id="website" name="website" type="text" autocomplete="off" tabindex="-1" />
@@ -363,9 +363,10 @@
           <button type="submit" class="btn primary">Enviar mensagem</button>
           <p class="form__hint" role="status">Respondo em menos de 24h.</p>
         </form>
-        <div class="contact__map">
+        <figure class="contact__map">
           <iframe title="Mapa Costeira do Pirajubaé, Florianópolis" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.6955709967844!2d-48.555!3d-27.635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739240fe5da4f%3A0x9b8b4f2edb6ed124!2sCosteira%20do%20Pirajuba%C3%A9%2C%20Florian%C3%B3polis%20-%20SC!5e0!3m2!1sen!2sbr!4v1700000000000!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+          <figcaption class="sr-only">Localização aproximada em Florianópolis.</figcaption>
+        </figure>
       </div>
     </section>
   </main>

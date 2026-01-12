@@ -263,7 +263,7 @@ h5 {
 .nav__icon {
   width: 40px;
   height: 40px;
-  border-radius: 12px;
+  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -298,14 +298,23 @@ h5 {
 .header__icons .nav__icon {
   width: 40px;
   height: 40px;
-  border-radius: 12px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(var(--color-paper), var(--color-paper)) padding-box, var(--accent-iridescent) border-box;
-  border: var(--border);
-  box-shadow: var(--shadow);
-  color: var(--color-ink);
+}
+
+.header__icons .nav__icon:focus-visible {
+  outline: none;
+  border-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(87, 140, 255, 0.35), 0 0 0 6px rgba(197, 87, 255, 0.28);
+}
+
+.header__icons .nav__icon img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  filter: none;
 }
 
 .nav-toggle {
